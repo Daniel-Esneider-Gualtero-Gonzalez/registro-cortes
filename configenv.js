@@ -1,21 +1,19 @@
 import { config } from "dotenv";
-import { variablesEntornoDev } from "./config-env-dev.js"
 
-let variablesEntorno = null
-const isBrowser = typeof window !== 'undefined';
-if (isBrowser) {
-    variablesEntorno = {
-        supabase_url: variablesEntornoDev.SUPABASE_URL,
-        supabase_anon_key: variablesEntornoDev.SUPABASE_ANON_KEY
-    }
-} else {
+let variablesEntorno  = null
+if(typeof window === "undefined" ) {
     config()
     variablesEntorno = {
         supabase_url: process.env.SUPABASE_URL,
-        supabase_anon_key: process.env.SUPABASE_URL
+        supabase_anon_key : process.env.SUPABASE_ANON_KEY
     }
-    
+}else{
+    variablesEntorno = {
+        supabase_url: "process.env.SUPABASE_URL",
+        supabase_anon_key : "process.env.SUPABASE_ANON_KEY"
+    }
 }
 
 
-export default variablesEntorno 
+    // AJUSTAR MANUALMENTE LAS VARIABLE CUANDO SE ESTA DESARROLLANDO
+export default variablesEntorno
