@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router"
 import { useContextCorte } from "../../context/contextCortes"
-import useLoading from "../../hooks/useLoading"
+import useLoading from "../../hooks/useLoading.js"
 import ParameterError from "../../components/ParameterError"
 import Loading from "../../components/Loading"
 import ReferenceNotFoundError from "../../components/ReferenceNotFoundError"
