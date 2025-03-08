@@ -2,9 +2,9 @@
 import { useNavigate } from "react-router";
 import { useContextAuth } from "../../context/contextAuth"
 import { useEffect } from "react";
-import useAlert from "../../hooks/useAlert";
+import useAlert from "../../hooks/useAlert.js";
 import Alert from "../Alert";
-import useLoading from "../../hooks/useLoading";
+import useLoading from "../../hooks/useLoading.js";
 import Loading from "../Loading";
 
 function Login() {

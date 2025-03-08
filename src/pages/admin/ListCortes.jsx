@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import useLoading from '../../hooks/useLoading'
+import useLoading from '../../hooks/useLoading.js'
 import Registro from '../../components/Registro'
 import Loading from '../../components/Loading'
 import FilterCortes from '../../components/FilterCortes'

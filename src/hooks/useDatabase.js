@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { clienteSupabase } from '../supabaseClient'
+import { clienteSupabase } from '../supabaseClient.js'
 
 function useDatabase() {
     const [listCortes, setListCortes] = useState(null)

@@ -1,5 +1,5 @@
 import { createContext, use } from "react";
-import useDatabase from "../hooks/useDatabase";
+import useDatabase from "../hooks/useDatabase.js";
 
 const contextCorte = createContext()
 

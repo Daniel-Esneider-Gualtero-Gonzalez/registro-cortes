@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link, useParams } from 'react-router'
 import Modal from '../../components/Modal'
-import useLoading from '../../hooks/useLoading'
-import useDatabase from '../../hooks/useDatabase'
+import useLoading from '../../hooks/useLoading.js'
+import useDatabase from '../../hooks/useDatabase.js'
 
 function DeleteCorte() {
     const {reference} = useParams()
