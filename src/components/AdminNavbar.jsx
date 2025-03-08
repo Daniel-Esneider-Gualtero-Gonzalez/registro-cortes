@@ -1,6 +1,6 @@
 import { NavLink } from "react-router"
 import { useContextAuth } from "../context/contextAuth"
-import UseLoading from "../hooks/useLoading.js"
+import useLoading from "../hooks/useLoading.js"
 import { useState } from "react"
 
 function AdminNavbar() {
