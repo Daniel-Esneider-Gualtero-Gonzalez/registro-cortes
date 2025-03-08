@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router'
 import {  useContextAuth } from './context/contextAuth.jsx'
-import Home from './pages/Home.jsx'
 import Login from './components/auth/Login.jsx'
 // admin
 import CreateRegisterCorte from './pages/admin/CreateRegisterCorte.jsx'
